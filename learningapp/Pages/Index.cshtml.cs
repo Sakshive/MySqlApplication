@@ -18,7 +18,8 @@ public class IndexModel : PageModel
     public void OnGet()
     {
        
-        string connectionString = _configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")!;
+        string connectionString = _configuration.GetConnectionString("AzureSQLConnectionString
+")!;
         var sqlConnection = new SqlConnection(connectionString);
         sqlConnection.Open();
 
